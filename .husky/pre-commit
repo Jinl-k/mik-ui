@@ -1,2 +1,2 @@
-* npx eslint . --fix
+# npx eslint . --fix
 npx lint-staged
