@@ -18,7 +18,12 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@k-ui/utils": ["packages/utils/src"]
+    }
   },
   "references": [{ "path": "./tsconfig.node.json" }]
 }
