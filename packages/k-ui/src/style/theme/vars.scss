@@ -1,0 +1,31 @@
+@import './colors.scss';
+
+:root {
+  --k-color-primary: var(--k-color-primary-6);
+  --k-color-primary-hover: var(--k-color-primary-5);
+  --k-color-primary-active: var(--k-color-primary-7);
+  --k-color-primary-selected: var(--k-color-primary-1);
+
+  --k-color-success: var(--k-color-success-6);
+  --k-color-success-hover: var(--k-color-success-5);
+  --k-color-success-active: var(--k-color-success-7);
+  --k-color-success-selected: var(--k-color-success-1);
+
+  --k-color-warning: var(--k-color-warning-6);
+  --k-color-warning-hover: var(--k-color-warning-5);
+  --k-color-warning-active: var(--k-color-warning-7);
+  --k-color-warning-selected: var(--k-color-warning-1);
+
+  --k-color-error: var(--k-color-error-5);
+  --k-color-error-hover: var(--k-color-error-4);
+  --k-color-error-active: var(--k-color-error-7);
+  --k-color-error-selected: var(--k-color-error-1);
+
+  --k-color-base: #000000e0;
+  --k-color-text: #000000e0;
+  --k-color-text-secondary: #000000a6;
+  --k-color-text-disabled: #00000040;
+  --k-color-border: #d9d9d9ff;
+  --k-color-divider: #0505050f;
+  --k-color-bg: #f5f5f5ff;
+}

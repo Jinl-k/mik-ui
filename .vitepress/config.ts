@@ -9,6 +9,7 @@ export default defineConfig({
     'docs/(.*)': '(.*)',
     // 'packages/k-ui/src/button/index.md': 'components/button/index.md',
     'packages/k-ui/src/:comp/(.*)': 'components/:comp/(.*)',
+    'packages/utils/src/(.*)': 'utils/(.*)',
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -16,6 +17,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '介绍', link: '/introduce' },
       { text: '组件', link: '/components/' },
+      { text: '工具', link: '/utils/' },
       // { text: 'Examples', link: '/markdown-examples' },
     ],
 
@@ -30,7 +32,13 @@ export default defineConfig({
       '/components/': [
         {
           text: '按钮',
-          link: '/components/button/index',
+          link: '/components/button/',
+        },
+      ],
+      '/utils/': [
+        {
+          text: 'genClass',
+          link: '/utils/gen-class',
         },
       ],
     },

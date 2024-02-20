@@ -27,5 +27,6 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue'],
   rules: {
     'vue/multi-word-component-names': 0,
+    '@typescript-eslint/no-unused-vars': 0,
   },
 };
