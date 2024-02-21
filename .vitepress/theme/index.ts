@@ -4,7 +4,8 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import './style.css';
 import { AntdTheme } from 'vite-plugin-vitepress-demo/theme';
-
+import k from 'k-ui';
+import 'k-ui/style';
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -12,8 +13,9 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     });
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app }) {
     app.component('Demo', AntdTheme);
+    app.use(k);
     // ...
   },
 } satisfies Theme;

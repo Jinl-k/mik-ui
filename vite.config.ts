@@ -17,6 +17,10 @@ export default defineConfig({
         find: /^@k-ui\/utils/,
         replacement: path.resolve(baseUrl, 'packages/utils/src'),
       },
+      {
+        find: /^k-ui/,
+        replacement: path.resolve(baseUrl, 'packages/k-ui/src'),
+      },
     ],
   },
 });

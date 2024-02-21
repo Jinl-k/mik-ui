@@ -1,5 +1,10 @@
 {
   "extends": ["../../tsconfig.json"],
   "compilerOptions": {},
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "../k-ui/src/button/button.vue.ts"
+  ]
 }

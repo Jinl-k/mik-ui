@@ -1,6 +1,6 @@
 <docs>
 ---
-title: 基础使用
+title: size
 ---
 
 这是一个`button`的使用例子
@@ -15,8 +15,7 @@ title: 基础使用
 </script>
 
 <template>
-  <k-button @cli="handleClick">1</k-button>
-  <k-button type="dashed">2</k-button>
-  <k-button type="primary">3</k-button>
-  <k-button type="primary" disabled>3</k-button>
+  <k-button @cli="handleClick" size="small">小</k-button>
+  <k-button @cli="handleClick">默认</k-button>
+  <k-button type="dashed" size="large">大</k-button>
 </template>

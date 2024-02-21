@@ -22,8 +22,13 @@
 
     "baseUrl": ".",
     "paths": {
-      "@k-ui/utils": ["packages/utils/src"]
+      "@k-ui/utils": ["packages/utils/src"],
+      "k-ui": ["packages/k-ui/src"],
+      "k-ui/*": ["packages/k-ui/src/*"]
     }
   },
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.vitepress.json" }
+  ]
 }

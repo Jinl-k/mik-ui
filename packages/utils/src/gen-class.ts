@@ -1,3 +1,6 @@
+// 拼接class名
+// https://github.com/JedWatson/classnames
+// https://github.com/lukeed/clsx
 import classNames from 'classnames';
 import { computed } from 'vue';
 /**
@@ -24,6 +27,7 @@ export function useClassNames(componentName: string) {
   };
 
   const customName = (...arg: BEMType[]) => {
+    // console.log('arg', arg);
     if (arg.length) {
       return arg.reduce((prev, cur) => {
         if (Array.isArray(cur)) {
@@ -37,7 +41,7 @@ export function useClassNames(componentName: string) {
         }
         // 默认为B
         return `${prev}-${cur}`;
-      }, componentClass);
+      }, componentClass) as string;
     }
     return componentClass;
   };
