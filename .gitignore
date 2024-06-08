@@ -25,3 +25,6 @@ dist-ssr
 pnpm-lock.yaml
 .vitepress/dist
 .vitepress/cache
+bun.lockb
+packages/k-ui/.vitepress
+!/packages/k-ui/.vitepress/
