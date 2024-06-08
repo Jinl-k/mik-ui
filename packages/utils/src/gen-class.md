@@ -1,3 +1,3 @@
 # 生成样式
 
-<demo src='./demos/gen-class.vue' />
+<demo src='./demos/gen-class.vue'></demo>

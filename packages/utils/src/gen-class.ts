@@ -35,7 +35,8 @@ export function useClassNames(componentName: string) {
           const arg2 = cur[1];
           if (arg2 === 'E') {
             return `${prev}__${arg1}`;
-          } else if (arg2 === 'M') {
+          }
+          if (arg2 === 'M') {
             return `${prev}--${arg1}`;
           }
         }

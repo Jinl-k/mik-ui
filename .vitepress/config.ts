@@ -1,23 +1,23 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'K UI',
-  description: 'This is a vue component library',
+  title: "K UI",
+  description: "This is a vue component library",
   // 路径映射
   rewrites: {
-    'docs/(.*)': '(.*)',
+    "docs/(.*)": "(.*)",
     // 'packages/k-ui/src/button/index.md': 'components/button/index.md',
-    'packages/k-ui/src/:comp/(.*)': 'components/:comp/(.*)',
-    'packages/utils/src/(.*)': 'utils/(.*)',
+    "packages/k-ui/src/:comp/(.*)": "components/:comp/(.*)",
+    "packages/utils/src/(.*)": "utils/(.*)",
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' },
-      { text: '介绍', link: '/introduce' },
-      { text: '组件', link: '/components/' },
-      { text: '工具', link: '/utils/' },
+      { text: "首页", link: "/" },
+      { text: "介绍", link: "/introduce" },
+      { text: "组件", link: "/components/" },
+      { text: "工具", link: "/utils/" },
       // { text: 'Examples', link: '/markdown-examples' },
     ],
 
@@ -29,22 +29,26 @@ export default defineConfig({
       //     { text: 'Runtime API Examples', link: '/api-examples' },
       //   ],
       // },
-      '/components/': [
+      "/components/": [
         {
-          text: '按钮',
-          link: '/components/button/',
+          text: "按钮",
+          link: "/components/button/",
+        },
+        {
+          text: "input",
+          link: "/components/input/",
         },
       ],
-      '/utils/': [
+      "/utils/": [
         {
-          text: 'genClass',
-          link: '/utils/gen-class',
+          text: "genClass",
+          link: "/utils/gen-class",
         },
       ],
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
   },
 });

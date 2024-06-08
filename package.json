@@ -9,29 +9,26 @@
     "genColors": "esno ./scripts/gen-colors.ts"
   },
   "dependencies": {
-    "vue": "^3.4.15"
+    "vue": "^3.4.26"
   },
   "devDependencies": {
     "@ant-design/colors": "^7.0.2",
-    "@types/node": "^20.11.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
-    "@vitejs/plugin-vue": "^5.0.3",
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.21.1",
-    "esno": "^4.0.0",
+    "@biomejs/biome": "^1.7.3",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.12.8",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "esno": "^4.7.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "sass": "^1.71.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.0",
+    "lodash-es": "^4.17.21",
+    "sass": "^1.76.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
     "vite-plugin-vitepress-demo": "^2.2.1",
     "vitepress": "1.0.0-rc.43",
     "vue-tsc": "^1.8.27"
   },
   "lint-staged": {
-    "./**/*.{js,ts,vue,jsx,tsx,css,json}": [
-      "eslint --fix"
-    ]
+    "./**/*.{js,ts,vue,jsx,tsx,css,json}": []
   }
 }

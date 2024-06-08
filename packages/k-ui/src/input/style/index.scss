@@ -1,0 +1,64 @@
+.k-input {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  border: 1px solid var(--k-color-border);
+  border-radius: 4px;
+  padding-inline: 10px;
+  cursor: text;
+
+  font-size: 16px;
+  height: 26px;
+  line-height: 1;
+
+  &--large {
+    font-size: 18px;
+    height: 32px;
+  }
+  &--small {
+    font-size: 14px;
+    height: 20px;
+    padding-inline: 4px;
+  }
+
+  &__prefix {
+    margin-right: 8px;
+  }
+  &__suffix {
+    margin-left: 8px;
+  }
+
+  &--small &__prefix {
+    margin-right: 4px;
+  }
+  &--smal &__suffix {
+    margin-left: 4px;
+  }
+
+  input {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  &:focus-within {
+    border-color: var(--k-color-primary);
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    color: var(--k-color-text-disabled);
+    border-color: var(--k-color-text-disabled);
+    background: gray;
+
+    &:focus-within {
+      border-color: var(--k-color-text-disabled);
+    }
+  }
+
+  &-input {
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

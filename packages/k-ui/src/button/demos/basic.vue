@@ -7,11 +7,12 @@ title: 基础使用
 </docs>
 
 <script lang="ts" setup>
-  // import { test } from '@k-ui/utils';
-  // test();
-  function handleClick(e: Event) {
-    console.log(' 1111', e);
-  }
+// import { test } from '@k-ui/utils';
+// test();
+
+function handleClick(e: Event) {
+  console.log(" 1111", e);
+}
 </script>
 
 <template>
