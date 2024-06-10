@@ -9,6 +9,8 @@
     "genColors": "esno ./scripts/gen-colors.ts"
   },
   "dependencies": {
+    "@floating-ui/vue": "^1.0.6",
+    "@v-c/utils": "^0.0.26",
     "vue": "^3.4.26"
   },
   "devDependencies": {
@@ -17,6 +19,7 @@
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.12.8",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
     "esno": "^4.7.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",

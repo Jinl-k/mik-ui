@@ -42,7 +42,7 @@ const props = defineProps<InputProps>();
 
 const inputRef = ref<HTMLInputElement>();
 onMounted(() => {
-  console.log("in", inputRef.value?.name);
+  // console.log("in", inputRef.value?.name);
 });
 const setInputValue = () => {
   const _input = inputRef.value;

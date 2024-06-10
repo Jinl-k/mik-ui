@@ -38,6 +38,10 @@ export default defineConfig({
           text: "input",
           link: "/components/input/",
         },
+        {
+          text: "tooltip",
+          link: "/components/tooltip/",
+        },
       ],
       "/utils/": [
         {
