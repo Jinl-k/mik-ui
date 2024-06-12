@@ -1,0 +1,30 @@
+@import "../../style/index.scss";
+
+.k-table {
+  &-cell {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  &-header {
+    box-sizing: border-box;
+
+    &-cell {
+      position: relative;
+      background: red;
+
+      &:not(:last-child) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          height: 1.5em;
+          width: 1px;
+          background: #f0f0f0;
+        }
+      }
+    }
+  }
+}
