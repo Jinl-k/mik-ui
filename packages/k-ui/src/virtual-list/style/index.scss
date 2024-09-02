@@ -1,0 +1,15 @@
+@import "../../style/index.scss";
+.k-virtual-list {
+  overflow-y: auto;
+
+  &-body {
+    position: relative;
+  }
+
+  &-item {
+    position: absolute;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+  }
+}

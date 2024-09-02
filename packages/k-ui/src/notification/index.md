@@ -1,3 +1,3 @@
-# input 输入框
+# Notification 通知
 
 <demo src="./demos/basic.vue"></demo>

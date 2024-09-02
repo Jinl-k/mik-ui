@@ -21,11 +21,11 @@
 
 <script setup lang="ts">
 import { useClassNames } from "@k-ui/utils";
-// import { InputProps } from "k-ui/input/interface";
-import { onMounted, ref } from "vue";
-import { originInputProps, type InputProps } from "./interface";
 // 借用lodash-es 动态分配属性
 import { omit, pick } from "lodash-es";
+// import { InputProps } from "k-ui/input/interface";
+import { onMounted, ref } from "vue";
+import { type InputProps, originInputProps } from "./interface";
 
 defineOptions({
   name: "KInput",

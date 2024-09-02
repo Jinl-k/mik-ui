@@ -1,0 +1,49 @@
+@import "../../style/index.scss";
+
+.k-notification {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  min-width: 58px;
+  right: 20px;
+
+  &-wrapper {
+    background: #fff;
+    color: black;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 20px;
+    width: 384px;
+    box-shadow:
+      0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12),
+      0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+    &-title {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    &-content {
+      font-size: 14px;
+    }
+  }
+}
+
+.k-slide-right-move,
+.k-slide-right-enter-active,
+.k-slide-right-leave-active {
+  transition: all 0.3s;
+}
+
+.k-slide-right-enter-from,
+.k-slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.k-slide-right-leave-active {
+  position: absolute;
+}

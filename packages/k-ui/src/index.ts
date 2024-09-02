@@ -1,14 +1,19 @@
-import type { App, Plugin } from 'vue';
-import * as components from './components';
-import pkg from '../package.json';
+import type { App, Plugin } from "vue";
+import pkg from "../package.json";
+import * as components from "./components";
 // 把所有组件全局注册到vue实例中
 export default {
   install(app: App) {
-    Object.entries(components).forEach(([_name, comp]) => {
+    for (const [_name, comp] of Object.entries(components)) {
       if (comp.install) {
         app.use(comp as never);
       }
-    });
+    }
+    // Object.entries(components).forEach(([_name, comp]) => {
+    //   if (comp.install) {
+    //     app.use(comp as never);
+    //   }
+    // });
   },
   version: pkg.version,
 } as Plugin;
@@ -17,4 +22,4 @@ export default {
 // app.use(k)
 
 // 2.按需导入 import { Button } from 'k-ui'
-export * from './components';
+export * from "./components";

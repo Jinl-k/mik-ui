@@ -1,14 +1,14 @@
+import { type Placement, offset, useFloating } from "@floating-ui/vue";
+import { useClassNames } from "@k-ui/utils";
+import { filterEmpty, isBaseType } from "@v-c/utils";
 import {
+  type PropType,
+  type VNode,
   computed,
   createVNode,
   defineComponent,
-  type PropType,
-  type VNode,
 } from "vue";
 import { ref } from "vue";
-import { offset, useFloating, type Placement } from "@floating-ui/vue";
-import { filterEmpty, isBaseType } from "@v-c/utils";
-import { useClassNames } from "@k-ui/utils";
 
 export default defineComponent({
   name: "KTooltip",
@@ -110,7 +110,7 @@ export default defineComponent({
       const events = {
         onmouseenter: handleMouseEnter,
         onmouseleave: handleMouseLeave,
-          onClick: handleClick,
+        onClick: handleClick,
       };
       const tipNode = createVNode(node as VNode, {
         ref: reference,

@@ -7,14 +7,14 @@ title: 基础使用
 </docs>
 
 <script lang="ts" setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref } from 'vue';
 
-const input = ref("");
-const inputRef = ref()
+const input = ref('');
+const inputRef = ref();
 
-onMounted(()=>{
-  inputRef.value.focus()
-})
+onMounted(() => {
+  inputRef.value.focus();
+});
 </script>
 
 <template>
