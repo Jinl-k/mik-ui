@@ -1,5 +1,4 @@
 import type { VNode } from "vue";
-
 export interface NotificationConfig {
   content: string | VNode;
   title: string | VNode;

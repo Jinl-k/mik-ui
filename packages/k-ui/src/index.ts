@@ -5,6 +5,7 @@ import * as components from "./components";
 export default {
   install(app: App) {
     for (const [_name, comp] of Object.entries(components)) {
+      // console.log('com',comp)
       if (comp.install) {
         app.use(comp as never);
       }

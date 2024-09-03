@@ -1,11 +1,11 @@
 import type { App } from "vue";
 import { createNotification } from "./instance";
 
-const instance = createNotification();
-(instance as any).install = (app: App) => {
-  app.config.globalProperties.$notification = instance;
-  // optionApi
-  // this.$notification.info({content:'test',title:'test'})
+const NoInstance = createNotification();
+// console.log("no", NoInstance);
+(Notification as any).install = (app: App) => {
+  app.config.globalProperties.$notification = NoInstance;
 };
-
-export default instance;
+// optionApi
+// this.$notification.info({content:'test',title:'test'})
+export default NoInstance;

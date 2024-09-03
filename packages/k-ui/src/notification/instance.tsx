@@ -2,33 +2,37 @@ import type {
   NotificationConfig,
   NotificationInstance,
 } from "k-ui/notification/interface.ts";
-import { createVNode } from "vue";
-import { render } from "vue";
+import { createVNode, render } from "vue";
 import Notification from "./notification";
 
+let instance: NotificationInstance | null = null;
+
 export function createNotification() {
-  let instance: NotificationInstance;
-  const info = (config: NotificationConfig) => {
+  const getInstance = (config: NotificationConfig) => {
     if (!instance) {
-      // console.log("1");
-      const body = document.body;
-      // 创建虚拟节点
       const vm = createVNode(Notification, {
-        onReady: (_instance: NotificationInstance) => {
-          instance = _instance;
-          instance.add(config);
+        onReady: (inst: NotificationInstance) => {
+          instance = inst;
         },
       });
       if (config.appContext) {
         vm.appContext = config.appContext;
       }
-      render(vm, body);
-    } else {
-      instance.add(config);
+      // 仅渲染一次
+      render(vm, document.body);
     }
+    return instance;
   };
 
-  return {
-    info,
+  const info = (config: NotificationConfig) => {
+    return new Promise<() => void>((resolve) => {
+      const inst = getInstance(config);
+      if (inst) {
+        // 确保 add 方法只被调用一次
+        resolve(inst.add(config));
+      }
+    });
   };
+
+  return { info };
 }

@@ -11,16 +11,7 @@
     "lineWidth": 80
   },
   "javascript": {
-    "formatter": {
-      "arrowParentheses": "always",
-      "bracketSameLine": false,
-      "bracketSpacing": true,
-      "jsxQuoteStyle": "double",
-      "quoteProperties": "asNeeded",
-      "quoteStyle": "single",
-      "semicolons": "always",
-      "trailingCommas": "all"
-    }
+    "formatter": {}
   },
   "json": {
     "formatter": {
