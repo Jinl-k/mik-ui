@@ -14,6 +14,9 @@ export default defineConfig({
       glob: ["**/demos/*.vue"],
     }),
   ],
+  build: {
+    target: "es6",
+  },
   resolve: {
     alias,
   },

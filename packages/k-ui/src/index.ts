@@ -6,7 +6,7 @@ export default {
   install(app: App) {
     for (const [_name, comp] of Object.entries(components)) {
       // console.log('com',comp)
-      if (comp.install) {
+      if ((comp as any).install) {
         app.use(comp as never);
       }
     }
