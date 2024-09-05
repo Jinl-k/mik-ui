@@ -5,9 +5,9 @@ import fg from "fast-glob";
 import fs from "fs-extra";
 import * as sass from "sass";
 
-// 找到k-ui具体目录
-const kuiDir = fileURLToPath(new URL("../packages/k-ui", import.meta.url));
-// 然后遍历k-ui内所有sass文件
+// 找到kevin-ui具体目录
+const kuiDir = fileURLToPath(new URL("../packages/kevin-ui", import.meta.url));
+// 然后遍历kevin-ui内所有sass文件
 const sassFiles = fg.sync(["src/**/style/index.scss", "!src/style"], {
   cwd: kuiDir,
 });

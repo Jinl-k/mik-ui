@@ -4,8 +4,8 @@ import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
 import { AntdTheme } from "vite-plugin-vitepress-demo/theme";
-// import k from 'k-ui';
-import "k-ui/style";
+// import k from 'kevin-ui';
+import "kevin-ui/style";
 export default {
   extends: DefaultTheme,
   Layout: () => {

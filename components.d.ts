@@ -7,9 +7,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    KButton: typeof import('k-ui')['Button']
-    KInput: typeof import('k-ui')['Input']
-    KTable: typeof import('k-ui')['Table']
-    KTableColumn: typeof import('k-ui')['TableColumn']
+    KButton: typeof import('kevin-ui')['Button']
+    KInput: typeof import('kevin-ui')['Input']
+    KTable: typeof import('kevin-ui')['Table']
+    KTableColumn: typeof import('kevin-ui')['TableColumn']
   }
 }

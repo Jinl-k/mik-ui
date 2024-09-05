@@ -7,7 +7,7 @@ title: 图标
 </docs>
 
 <script setup lang="ts">
-import { Loading } from "@k-ui/icons";
+import { Loading } from "@kevin-ui/icons";
 </script>
 
 <template>

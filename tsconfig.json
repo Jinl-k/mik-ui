@@ -21,10 +21,10 @@
 
     "baseUrl": ".",
     "paths": {
-      "@k-ui/utils": ["packages/utils/src"],
-      "@k-ui/icons": ["packages/icons/src"],
-      "k-ui": ["packages/k-ui/src"],
-      "k-ui/*": ["packages/k-ui/src/*"]
+      "@kevin-ui/utils": ["packages/utils/src"],
+      "@kevin-ui/icons": ["packages/icons/src"],
+      "kevin-ui": ["packages/kevin-ui/src"],
+      "kevin-ui/*": ["packages/kevin-ui/src/*"]
     }
   },
   "references": [

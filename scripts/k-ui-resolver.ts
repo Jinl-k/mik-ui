@@ -8,7 +8,7 @@ export function kUIResolver(): ComponentResolver {
       if (name.startsWith("K")) {
         return {
           name: name.slice(1),
-          from: "k-ui",
+          from: "kevin-ui",
         };
       }
     },

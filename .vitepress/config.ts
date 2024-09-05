@@ -2,13 +2,13 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "K UI",
+  title: "Kevin UI",
   description: "This is a vue component library",
   // 路径映射
   rewrites: {
     "docs/(.*)": "(.*)",
-    // 'packages/k-ui/src/button/index.md': 'components/button/index.md',
-    "packages/k-ui/src/:comp/(.*)": "components/:comp/(.*)",
+    // 'packages/kevin-ui/src/button/index.md': 'components/button/index.md',
+    "packages/kevin-ui/src/:comp/(.*)": "components/:comp/(.*)",
     "packages/utils/src/(.*)": "utils/(.*)",
     "packages/icons/docs/(.*)": "components/icons/(.*)",
   },
