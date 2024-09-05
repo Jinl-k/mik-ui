@@ -1,30 +1,20 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { defineConfig } from "vite";
-// import vue from '@vitejs/plugin-vue';
-import VitePluginVitepressDemo from "vite-plugin-vitepress-demo";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import { defineConfig } from "vite";
 import tsxResolveTypes from "vite-plugin-tsx-resolve-types";
+import { vitepressDemo } from "vite-plugin-vitepress-demo";
+import alias from "./alias";
 
-const baseUrl = fileURLToPath(new URL(".", import.meta.url));
+// import vue from '@vitejs/plugin-vue'
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vueJsx(),
     tsxResolveTypes(),
-    VitePluginVitepressDemo({
+    vueJsx(),
+    vitepressDemo({
       glob: ["**/demos/*.vue"],
     }),
   ],
   resolve: {
-    alias: [
-      {
-        find: /^@k-ui\/utils/,
-        replacement: path.resolve(baseUrl, "packages/utils/src"),
-      },
-      {
-        find: /^k-ui/,
-        replacement: path.resolve(baseUrl, "packages/k-ui/src"),
-      },
-    ],
+    alias,
   },
 });

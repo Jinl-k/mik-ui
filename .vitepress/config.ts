@@ -10,6 +10,7 @@ export default defineConfig({
     // 'packages/k-ui/src/button/index.md': 'components/button/index.md',
     "packages/k-ui/src/:comp/(.*)": "components/:comp/(.*)",
     "packages/utils/src/(.*)": "utils/(.*)",
+    "packages/icons/docs/(.*)": "components/icons/(.*)",
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -53,6 +54,10 @@ export default defineConfig({
         {
           text: "通知",
           link: "/components/notification/",
+        },
+        {
+          text: "图标",
+          link: "/components/icons/",
         },
       ],
       "/utils/": [

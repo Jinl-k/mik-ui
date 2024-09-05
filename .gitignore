@@ -28,3 +28,4 @@ pnpm-lock.yaml
 bun.lockb
 !/packages/k-ui/.vitepress/
 !/packages/k-ui/.vitepress/cache/
+!/coverage/

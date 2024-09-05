@@ -17,10 +17,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["vitest/globals"],
 
     "baseUrl": ".",
     "paths": {
       "@k-ui/utils": ["packages/utils/src"],
+      "@k-ui/icons": ["packages/icons/src"],
       "k-ui": ["packages/k-ui/src"],
       "k-ui/*": ["packages/k-ui/src/*"]
     }

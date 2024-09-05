@@ -3,7 +3,7 @@ import { createNotification } from "./instance.ts";
 
 const NoInstance = createNotification();
 // console.log("no", NoInstance);
-(Notification as any).install = (app: App) => {
+(NoInstance as any).install = (app: App) => {
   app.config.globalProperties.$notification = NoInstance;
 };
 // optionApi
