@@ -7,8 +7,8 @@ export default defineConfig({
   // 路径映射
   rewrites: {
     "docs/(.*)": "(.*)",
-    // 'packages/kevin-ui/src/button/index.md': 'components/button/index.md',
-    "packages/kevin-ui/src/:comp/(.*)": "components/:comp/(.*)",
+    // 'packages/mik-ui/src/button/index.md': 'components/button/index.md',
+    "packages/mik-ui/src/:comp/(.*)": "components/:comp/(.*)",
     "packages/utils/src/(.*)": "utils/(.*)",
     "packages/icons/docs/(.*)": "components/icons/(.*)",
   },

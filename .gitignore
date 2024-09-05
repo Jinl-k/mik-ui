@@ -26,7 +26,7 @@ pnpm-lock.yaml
 .vitepress/dist
 .vitepress/cache
 bun.lockb
-!/packages/kevin-ui/.vitepress/
-!/packages/kevin-ui/.vitepress/cache/
+!/packages/mik-ui/.vitepress/
+!/packages/mik-ui/.vitepress/cache/
 coverage
 !/coverage/

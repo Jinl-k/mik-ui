@@ -19,6 +19,6 @@ genColors(red, "error");
 const baseUrl = fileURLToPath(new URL("../", import.meta.url));
 const cssFile = path.resolve(
   baseUrl,
-  "packages/kevin-ui/src/style/theme/colors.css",
+  "packages/mik-ui/src/style/theme/colors.css",
 );
 fs.writeFileSync(cssFile, `:root {\n${colors}}`);

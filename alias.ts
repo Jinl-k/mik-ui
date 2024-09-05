@@ -5,15 +5,15 @@ const baseUrl = fileURLToPath(new URL(".", import.meta.url));
 
 export default [
   {
-    find: /^kevin-ui/,
-    replacement: path.resolve(baseUrl, "packages/kevin-ui/src"),
+    find: /^mik-ui/,
+    replacement: path.resolve(baseUrl, "packages/mik-ui/src"),
   },
   {
-    find: /^@kevin-ui\/utils/,
+    find: /^@mik-ui\/utils/,
     replacement: path.resolve(baseUrl, "packages/utils/src"),
   },
   {
-    find: /^@kevin-ui\/icons/,
+    find: /^@mik-ui\/icons/,
     replacement: path.resolve(baseUrl, "packages/icons/src"),
   },
 ];

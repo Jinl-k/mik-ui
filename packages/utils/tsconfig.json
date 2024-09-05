@@ -5,6 +5,6 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "../kevin-ui/src/button/button.vue.ts"
+    "../mik-ui/src/button/button.vue.ts"
   ]
 }

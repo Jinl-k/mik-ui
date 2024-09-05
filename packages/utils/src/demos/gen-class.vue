@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useClassNames } from "@kevin-ui/utils";
+import { useClassNames } from "@mik-ui/utils";
 import { ref } from "vue";
 const { customName, customNameE } = useClassNames("button");
 const testRef = ref(false);
