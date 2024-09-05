@@ -1,11 +1,11 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue';
-import type { Theme } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
-import './style.css';
-import { AntdTheme } from 'vite-plugin-vitepress-demo/theme';
-import k from 'k-ui';
-import 'k-ui/style';
+import { h } from "vue";
+import type { Theme } from "vitepress";
+import DefaultTheme from "vitepress/theme";
+import "./style.css";
+import { AntdTheme } from "vite-plugin-vitepress-demo/theme";
+// import k from 'k-ui';
+import "k-ui/style";
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -14,8 +14,8 @@ export default {
     });
   },
   enhanceApp({ app }) {
-    app.component('Demo', AntdTheme);
-    app.use(k);
+    app.component("Demo", AntdTheme);
+    // app.use(k);
     // ...
   },
 } satisfies Theme;

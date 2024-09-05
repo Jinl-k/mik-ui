@@ -3,7 +3,7 @@ import type { HeaderProps } from "./interface";
 import { useClassNames } from "@k-ui/utils";
 
 export const Header = defineComponent<HeaderProps>({
-  name: "Header",
+  name: "KHeader",
   setup(props = { columns: [] }) {
     const { customName } = useClassNames("table");
 
@@ -22,12 +22,12 @@ export const Header = defineComponent<HeaderProps>({
         });
       };
 
-      const rowCls={
-        [customName('header-row')]:true
-      }
-      const cls={
-        [customName('header')]:true
-      }
+      const rowCls = {
+        [customName("header-row")]: true,
+      };
+      const cls = {
+        [customName("header")]: true,
+      };
       return (
         <thead class={cls}>
           <tr class={rowCls}>{renderColumns()}</tr>
