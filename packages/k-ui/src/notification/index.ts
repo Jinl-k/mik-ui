@@ -1,5 +1,5 @@
 import type { App } from "vue";
-import { createNotification } from "./instance";
+import { createNotification } from "./instance.ts";
 
 const NoInstance = createNotification();
 // console.log("no", NoInstance);
