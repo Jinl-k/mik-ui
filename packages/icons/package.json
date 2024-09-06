@@ -1,13 +1,37 @@
 {
   "name": "@mik-ui/icons",
-  "version": "1.0.0",
   "type": "module",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "mik-ui 图标库",
+  "author": "kevin",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "icons"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./es/*": "./es/*",
+    "./dist/*": "./dist/*",
+    "./lib/*": "./lib/*",
+    "./package.json": "./package.json"
+  },
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
   "scripts": {
     "build": "vite build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

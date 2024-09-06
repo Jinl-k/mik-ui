@@ -1,14 +1,30 @@
 {
   "name": "@mik-ui/utils",
+  "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "description": "",
-  "author": "",
+  "author": "kevin",
+  "license": "MIT",
   "keywords": [],
-  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
   "dependencies": {
     "classnames": "^2.5.1"
   }
