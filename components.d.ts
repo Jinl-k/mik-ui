@@ -10,6 +10,5 @@ declare module 'vue' {
     KButton: typeof import('mik-ui')['Button']
     KInput: typeof import('mik-ui')['Input']
     KTable: typeof import('mik-ui')['Table']
-    KTableColumn: typeof import('mik-ui')['TableColumn']
   }
 }
