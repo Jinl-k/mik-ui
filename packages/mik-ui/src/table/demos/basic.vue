@@ -42,10 +42,10 @@ const data = ref(
 
 <template>
   <div>
-    <!-- <k-table :columns="columns" :data="data" /> -->
-    <k-table :data="data">
-      <k-table-column title="姓名" key="name"></k-table-column>
-      <k-table-column title="年龄" key="age"></k-table-column>
-    </k-table>
+    <k-table :columns="columns" :data="data" />
+    <!--    <k-table :data="data">-->
+    <!--      <k-table-column title="姓名" key="name"></k-table-column>-->
+    <!--      <k-table-column title="年龄" key="age"></k-table-column>-->
+    <!--    </k-table>-->
   </div>
 </template>
