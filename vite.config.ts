@@ -10,6 +10,7 @@ import alias from "./alias";
 // import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "",
   plugins: [
     tsxResolveTypes(),
     vueJsx(),
@@ -20,9 +21,9 @@ export default defineConfig({
       resolvers: [kUIResolver()],
     }),
   ],
-  build: {
-    target: "es6",
-  },
+  // build: {
+  //   target: "es6",
+  // },
   resolve: {
     alias,
   },
