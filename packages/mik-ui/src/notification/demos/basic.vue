@@ -29,7 +29,7 @@ async function showNotification() {
     title: "Test Notification",
     content: h(Test),
     appContext: instance?.appContext,
-    // duration:1000
+    duration: 3000,
   });
   closeFns.push(closeFn); // 保存每个通知的关闭函数
 }
