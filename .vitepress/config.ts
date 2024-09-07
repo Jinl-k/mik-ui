@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Mik UI",
-  description: "This is a vue component library",
+  description: "这是一个vue3组件库",
   base: process.env.NODE_ENV === "production" ? "/mik-ui/" : "/",
   // 路径映射
   rewrites: {

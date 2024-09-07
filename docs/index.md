@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "K UI"
-  text: "This is a vue component library"
+  name: "MiK UI"
+  text: "这是一个vue3组件库"
   tagline: My great project tagline
   actions:
     - theme: brand
